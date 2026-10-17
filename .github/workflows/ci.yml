@@ -1,0 +1,13 @@
+name: CI
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+
+jobs:
+  test:
+    uses: flipslidersand-labs/qa-workflows/.github/workflows/rust-test.yml@main
+    with:
+      # 実装前の雛形でテスト0件のため coverage gate(既定60%)は常に落ちる。実装が入ったら true に戻す。
+      run-coverage: false
