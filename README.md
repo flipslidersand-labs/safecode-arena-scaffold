@@ -52,6 +52,17 @@ cases:
 - **Storage / ストレージ:** SQLite (rusqlite)
 - **Config / 設定:** YAML (serde_yaml)
 
+## v1 scope / v1 の範囲
+
+Checked statically against code (not executed). / コードを静的に照合した結果（未実行）。
+
+- [x] CLI accepts `eval --file --spec` and `compare --dir --spec --out`
+- [ ] `eval` runs the candidate in Wasmtime and records pass/fail, stdout, runtime, exit code
+- [ ] `compare` ranks candidates by pass-rate, performance, and safety
+- [ ] A Markdown report with a per-case breakdown is written
+- [ ] The YAML spec (`cases`, `timeout_ms`, `max_memory_bytes`) is loaded
+- [ ] Results are stored in SQLite
+
 ## Status / ステータス
 
 Scaffold phase — CLI skeleton complete, evaluation engine in progress.
