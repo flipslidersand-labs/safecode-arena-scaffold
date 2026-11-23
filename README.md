@@ -1,5 +1,7 @@
 # safecode-arena
 
+Prototype — not a release target. / 試作のため、リリースの対象外。
+
 Automated evaluation runner for AI-generated code candidates (Rust + Wasmtime).
 Executes candidate code inside a WebAssembly sandbox, scores each run against a YAML spec, and produces a ranked comparison report.
 
