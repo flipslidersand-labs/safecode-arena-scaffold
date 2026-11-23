@@ -28,7 +28,7 @@ spec.yaml (test cases + scoring rules)
 cargo build --release
 
 # Evaluate a single candidate / 単一候補を評価
-safecode-arena eval --file candidate.wasm --spec spec.yaml
+safecode-arena eval --file candidate.rs --spec spec.yaml
 
 # Compare multiple candidates / 複数候補を比較
 safecode-arena compare --dir ./candidates --spec spec.yaml --out report.md
